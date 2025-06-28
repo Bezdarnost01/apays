@@ -2,7 +2,18 @@
   <h1 align="center">apays</h1>
 </p>
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  [![httpx](https://img.shields.io/badge/httpx-%3E%3D0.24.0-blue.svg)](https://www.python-httpx.org/)  [![pydantic v2](https://img.shields.io/badge/pydantic-v2-blue.svg)](https://pydantic.dev/)  
+<p align="center">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg" alt="Python 3.8+">
+  </a>
+  <a href="https://www.python-httpx.org/">
+    <img src="https://img.shields.io/badge/httpx-%3E%3D0.24.0-blue.svg" alt="httpx">
+  </a>
+  <a href="https://pydantic.dev/">
+    <img src="https://img.shields.io/badge/pydantic-v2-blue.svg" alt="pydantic v2">
+  </a>
+</p>
+
 
 **apays** is an asynchronous Python client for the APays payment API. It provides methods to create payments, check status, and (optionally) poll until completion.
 
