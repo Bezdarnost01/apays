@@ -14,12 +14,11 @@
   </a>
 </p>
 
+**apays** — это асинхронный Python-клиент для API платёжной системы APays. Он предоставляет методы для создания платежей, проверки их статуса и (опционально) опроса до завершения.
 
-**apays** is an asynchronous Python client for the APays payment API. It provides methods to create payments, check status, and (optionally) poll until completion.
+> ## [Репозиторий на GitHub](https://github.com/Bezdarnost01/apays)
 
-> ## [GitHub Repository](https://github.com/Bezdarnost01/apays)
-
-## Quick start
+## Быстрый старт
 
 ```python
 import asyncio
@@ -37,7 +36,7 @@ async def main():
         status = await client.get_order(resp.order_id)
         print("Current status:", status.order_status)
     except APayError as e:
-        print("APays error:", e)
+        print("Ошибка APays:", e)
     finally:
         await client.close()
 
@@ -45,7 +44,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-## Polling example
+## Пример polling
 
 ```python
 import asyncio
@@ -65,7 +64,7 @@ async def main():
         )
         print("Final status:", final.order_status)
     except APayError as e:
-        print("APays error:", e)
+        print("Ошибка APays:", e)
     finally:
         await client.close()
 
@@ -73,15 +72,18 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
+## Установка
 
-## Installation
-
-Since **apays** isn’t on PyPI yet, you can install it directly from GitHub:
+Вы можете установить его напрямую из GitHub или из PyPi:
 
 ```bash
 pip install git+https://github.com/Bezdarnost01/apays.git@main#egg=apays
 ```
 
-## License
+```bash
+pip install apays
+```
+
+## Лицензия
 
 MIT © [Bezdarnost01](https://github.com/Bezdarnost01)
